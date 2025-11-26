@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - NEVER MESSANGER</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="user-info">
+                <h3 id="currentUsername">User</h3>
+                <button onclick="logout()">Logout</button>
+            </div>
+            <div class="online-users">
+                <h4>Online Friends</h4>
+                <ul id="usersList"></ul>
+            </div>
+        </div>
+        
+        <div class="chat-area">
+            <div class="messages" id="messages"></div>
+            
+            <div class="message-input">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <input type="file" id="fileInput" accept="image/*,video/*,.pdf,.doc,.docx">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
